@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ImgPop"
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/popular">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/popname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingStart="5dp"
+            android:text="Populars"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/popratingImg"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/rating_bar">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/popratingTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:paddingStart="10dp"
+                android:text="5.0"
+                android:textColor="@color/popular_item_color"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                tools:ignore="RtlSymmetry">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/popdiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:paddingLeft="25dp"
+                android:textStyle="normal"
+                android:textColor="@color/popular_item_color"
+                android:text="Discount %20!"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

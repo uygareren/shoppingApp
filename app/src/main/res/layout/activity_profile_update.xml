@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileUpdate">
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img">
+        <EditText
+
+            android:layout_marginLeft="25dp"
+            android:id="@+id/profile_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawablePadding="30dp"
+
+            android:drawableStart="@drawable/ic__name"
+            android:textColorHint="@color/view_al_color"
+            android:background="@drawable/profile_txt_custom"
+            android:layout_marginTop="52dp"
+            android:hint="Your name"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_img" />
+
+        <EditText
+            android:id="@+id/profile_surname"
+            android:layout_width="350dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/view_al_color"
+
+            android:background="@drawable/profile_txt_custom"
+            android:drawableStart="@drawable/ic__name"
+
+            android:gravity="center_vertical"
+            android:drawablePadding="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Your Surname"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_name" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/profile_phonenumber"
+            android:layout_width="350dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_txt_custom"
+            android:drawableStart="@drawable/ic_local_phone"
+            android:textColorHint="@color/view_al_color"
+
+            android:gravity="center_vertical"
+            android:drawablePadding="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Your Phone Number"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_surname" />
+
+        <EditText
+            android:id="@+id/profile_email"
+            android:layout_width="350dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_txt_custom"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:gravity="center_vertical"
+            android:drawablePadding="30dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/view_al_color"
+
+            android:hint="Your E-Mail"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_phonenumber" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
